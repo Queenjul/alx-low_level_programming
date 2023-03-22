@@ -1,30 +1,24 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
- * main - something
- * Return: something
+ * main - Prints sum of multiples of 3 and 5
+ *
+ * Return: 0.
  */
 int main(void)
+
 {
-	int i;
-	unsigned long int j, k, l, m;
+	int c = 0;
+	int sum = 0;
 
-	j = 1;
-	k = 2;
-	m = 0;
-
-	for (i = 1; i <= 33; ++i)
+	while (c < 1024)
 	{
-		if (j < 4000000 && (j % 2) == 0)
+		if (c % 3 == 0 || c % 5 == 0)
 		{
-			m = m + j;
+			sum += c;
 		}
-		l = j + k;
-		j = k;
-		k = l;
+		c++;
 	}
-
-	printf("%lu\n", m);
-
+	printf("%i\n", sum);
 	return (0);
 }
