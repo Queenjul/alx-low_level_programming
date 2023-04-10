@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - write a program that print the number of arguments passed 
+ * main - Prints the number of arguments passed to the program
  * followed by a new line
  * @argc : number of command-line arguments
- * @argv : string of argumenst passed to main function
+ * @argv : string of argumenst passed to main funtion
  * Return: Always 0 (Success)
  */
 int main(int argc, char __attribute__((__unused__)) *argv[])
