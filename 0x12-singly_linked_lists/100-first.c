@@ -1,15 +1,17 @@
-#include "lists.h"
-/**
- * mystartupfunction - prints a string before the main function is complete
- *
- * Return: void
- */
-void __attribute__ ((constructor)) mystartupfunction(void)
-{
-	/* Apply the constructor attribute to myStartupFun() so that */
-	/*  is complete before main() */
+#include <stdio.h>
 
+#include "lists.h"
+
+/**
+ * before_main - pritnts a string before the main fuction is executed
+ *
+ * Return: void.
+ */
+
+
+void before_main(void)
+{
 	printf("You're beat! and yet, you must allow,\n");
 	printf("I bore my house upon my back!\n");
-}
+
 
