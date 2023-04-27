@@ -3,8 +3,7 @@
 #include "lists.h"
 
 /**
- * before_main - pritnts a string before the main fuction is achieved,
- * function in achieved.
+ * before_main - pritnts a string before the main fuction is achieved.
  *
  * Return: void.
  */
