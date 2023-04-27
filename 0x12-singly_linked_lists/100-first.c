@@ -3,10 +3,9 @@
 #include "lists.h"
 
 /**
- * before_main - funcion that prints a specific string before the main,
- * function in executed.
+ * before_main - funcion that prints a specific string before the main function is executed.
  *
- * Return: no return.
+ * Return: void.
  */
 
 
