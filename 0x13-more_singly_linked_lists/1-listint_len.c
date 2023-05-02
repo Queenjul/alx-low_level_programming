@@ -2,7 +2,7 @@
 
 /**
  * listint_len - returns the number of elements in a linked lists.
- * @h: linked list of type listint_ to cross
+ * @h: linked list of type listint_t to ply
  *
  * Return: numbers of nodes.
  */
