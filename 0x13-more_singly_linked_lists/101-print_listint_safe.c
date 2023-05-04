@@ -8,13 +8,13 @@
  */
 size_t print_listint_safe(const listint_t *head)
 {
-	size_t len = 0;
+	size_t num = 0;
 	long int curr;
 
 	while (head)
 	{
 		curr = head - head->next;
-		len++;
+		num++;
 		printf("[%p] %d\n", (void *)head, head->n);
 		if (curr > 0)
 			head = head->next;
@@ -25,5 +25,5 @@ size_t print_listint_safe(const listint_t *head)
 		}
 	}
 
-	return (len);
+	return (num);
 }
