@@ -5,12 +5,12 @@
  * unsigned int.
  * @b: binary.
  *
- * Return: unsigned int.
+ * Return: the converted number.
  */
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int pj;
-	int tmp;
+	int tmp, base_two;
 
 	if (!b)
 		return (0);
@@ -20,7 +20,7 @@ unsigned int binary_to_uint(const char *b)
 	for (tmp = 0; b[tmp] != '\0'; tmp++)
 		;
 
-	for (tmp = 1; tmp >= 0; tmp *= 2)
+	for (tmp--, base_two = 1; tmp >= 0; tmp--, base_two *= 2)
 	{
 		if (b[tmp] != '0' && b[tmp] != '1')
 		{
@@ -29,7 +29,7 @@ unsigned int binary_to_uint(const char *b)
 
 		if (b[tmp] & 1)
 		{
-			pj += tmp;
+			pj += base_two;
 		}
 	}
 
