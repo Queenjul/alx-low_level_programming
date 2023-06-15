@@ -7,10 +7,10 @@
  */
 size_t dlistint_len(const dlistint_t *h)
 {
-	size_t sum = 0;
+	size_t length = 0;
 
 	while (h)
-		h = h->next, sum++;
+		h = h->next, length++;
 
-	return (sum);
+	return (length);
 }
